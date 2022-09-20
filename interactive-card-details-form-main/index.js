@@ -4,8 +4,8 @@ const yourCardNum = document.getElementById('card-number');
 const endMonth = document.getElementById('exp-month');
 const endYear = document.getElementById('exp-year');
 const backCvc = document.getElementById('cvc');
-const fillForm = document.getElementById('form');
-const thankYou = document.getElementById('thank-you');
+//const fillForm = document.getElementById('form');
+//const thankYou = document.getElementById('thank-you');
 const continueBtn = document.getElementById('continue-btn')
 
 
@@ -117,8 +117,8 @@ if (
     yearError.style.display != "block" &&
     cvcError.style.display != "block" 
 ){
-    fillForm.style.display = "none"
-    thankYou.style.display = "block"
+    document.getElementById("form").style.display = "none"
+    document.getElementById("thank-you").style.display = "block"
     
 };
 });
